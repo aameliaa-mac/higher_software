@@ -8,14 +8,14 @@ while number < 0 or number > 255:
 
 tester = 128 
 current_number = number 
-output = '' # won't actually 'add' the number to the output 
+output = "" # won't actually 'add' the number to the output 
 
 while current_number >= 0 and tester >= 1:
     if current_number - tester >= 0:
-        output = output + 1 
+        output = output + '1' 
         current_number = current_number - tester 
     else:
-        output = output + '1' 
+        output = output + '0' 
     tester = tester / 2 
 
 print(output)
